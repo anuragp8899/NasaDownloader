@@ -33,7 +33,7 @@ public class Program
                 {
                     foreach (var image in photoResponse.photos)
                     {
-                        string localPath = "C:\\Users\\vamsh\\source\\repos\\Nasa.Web.App\\Nasa.ConsoleApp\\Images";
+                        string localPath = "Images";
                         await DownloadImageAsync(image.img_src, localPath);
                     }
                 }
